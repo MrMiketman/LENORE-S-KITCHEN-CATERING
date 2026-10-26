@@ -12,6 +12,7 @@ const fmt = (s: number) =>
 
 export function MusicPlayer() {
   const audio = useRef<HTMLAudioElement>(null);
+  const wrap = useRef<HTMLDivElement>(null);
   const [i, setI] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [started, setStarted] = useState(false);
@@ -29,6 +30,37 @@ export function MusicPlayer() {
     const a = audio.current;
     if (a && playing) a.play().catch(() => setPlaying(false));
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Autoplay: browsers only allow sound once a visit has begun, so try straight
+  // away and otherwise start the song on the visitor's first tap, click or key.
+  useEffect(() => {
+    const a = audio.current;
+    if (!a) return;
+    a.volume = vol;
+    let running = false;
+    const stop = () => {
+      window.removeEventListener("pointerdown", onFirst);
+      window.removeEventListener("keydown", onFirst);
+    };
+    const begin = () => {
+      a.play()
+        .then(() => {
+          running = true;
+          stop();
+          setPlaying(true);
+          setStarted(true);
+        })
+        .catch(() => {});
+    };
+    function onFirst(e: Event) {
+      if (running || wrap.current?.contains(e.target as Node)) return;
+      begin();
+    }
+    begin();
+    window.addEventListener("pointerdown", onFirst);
+    window.addEventListener("keydown", onFirst);
+    return stop;
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggle = () => {
     const a = audio.current;
