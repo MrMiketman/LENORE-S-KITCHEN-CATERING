@@ -58,15 +58,15 @@ export function SiteHeader() {
             {mainNav.map((item) => (
               <Link
                 key={item.to}
-                to={item.to}
-                activeOptions={{ exact: item.to === "/" }}
+                to="/"
+                hash={item.to.slice(1) || "home"}
                 className="eyebrow relative py-2 opacity-85 transition-opacity hover:opacity-100 data-[status=active]:opacity-100 data-[status=active]:after:absolute data-[status=active]:after:inset-x-0 data-[status=active]:after:-bottom-0.5 data-[status=active]:after:h-px data-[status=active]:after:bg-gold"
               >
                 {item.label}
               </Link>
             ))}
             <Button asChild variant={overHero ? "editorial-light" : "editorial"} size="xl" className="h-11 px-5">
-              <Link to="/contact">Inquire About Catering</Link>
+              <Link to="/" hash="contact">Inquire About Catering</Link>
             </Button>
           </nav>
 
@@ -93,7 +93,8 @@ export function SiteHeader() {
             {[...mainNav, { to: "/gallery-lkc", label: "Gallery LKC" } as const].map((item) => (
               <li key={item.to} className="border-b border-border">
                 <Link
-                  to={item.to}
+                  to="/"
+                  hash={item.to.slice(1) || "home"}
                   onClick={() => setOpen(false)}
                   className="block py-4 font-serif text-3xl text-ink"
                 >
@@ -104,7 +105,7 @@ export function SiteHeader() {
           </ul>
           <div className="mt-auto flex flex-col gap-3 pt-8">
             <Button asChild variant="editorial" size="xl">
-              <Link to="/contact" onClick={() => setOpen(false)}>Inquire About Catering</Link>
+              <Link to="/" hash="contact" onClick={() => setOpen(false)}>Inquire About Catering</Link>
             </Button>
             <Button asChild variant="editorial-outline" size="xl">
               <a href={business.phoneHref}>

@@ -1,12 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-buffet.jpg";
-import gallerySpace from "@/assets/gallery-space.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
 import { ArrowLink, CateringCta, SectionLabel } from "@/components/site/blocks";
 import { business } from "@/content/site";
 import { pick } from "@/content/gallery";
 import { pageMeta } from "@/lib/seo";
+import { AboutSection } from "@/components/sections/AboutSection";
+import { CateringSection } from "@/components/sections/CateringSection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { MediaSection } from "@/components/sections/MediaSection";
+import { GalleryLkcSection } from "@/components/sections/GalleryLkcSection";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,13 +29,12 @@ const signature = [
   { src: pick(3, 3), alt: "Long catered buffet line set in a bright event hall", caption: "Event service", cls: "md:col-span-3 aspect-[3/4] md:-mt-10" },
 ];
 
-const preview = [pick(2, 7), pick(3, 0), pick(6, 3), pick(10, 0), pick(5, 6), pick(7, 6)];
 
 function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[92svh] min-h-[600px] overflow-hidden bg-ink text-ivory">
+      <section id="home" className="relative h-[92svh] min-h-[600px] overflow-hidden bg-ink text-ivory">
         <img src={heroImg} alt="Candlelit catered buffet with chafing dishes, salads and fruit" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-[20%_50%]" />
         <div className="hero-scrim absolute inset-0" />
         <div className="container-site relative flex h-full items-end pb-16 md:items-center md:justify-end md:pb-0">
@@ -41,8 +45,8 @@ function Home() {
               Thoughtful catering, heartfelt hospitality, and a tradition of going the extra mile.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Button asChild variant="editorial-light" size="xl"><Link to="/catering">Explore Our Catering</Link></Button>
-              <Button asChild variant="editorial-ghost-light" size="xl"><Link to="/about">Our Story</Link></Button>
+              <Button asChild variant="editorial-light" size="xl"><Link to="/" hash="catering">Explore Our Catering</Link></Button>
+              <Button asChild variant="editorial-ghost-light" size="xl"><Link to="/" hash="about">Our Story</Link></Button>
             </div>
             <p className="mt-10 border-t border-ivory/20 pt-5 font-serif text-base italic text-taupe">“{business.motto}”</p>
           </Reveal>
@@ -98,27 +102,7 @@ function Home() {
               preparation and warm hospitality to the table — serving corporations, government offices, schools,
               churches, and more.
             </p>
-            <Button asChild variant="editorial-light" size="xl" className="mt-10"><Link to="/catering">Explore Catering</Link></Button>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Story */}
-      <section className="py-24 md:py-36">
-        <div className="container-site grid items-center gap-12 md:grid-cols-12">
-          <Reveal className="md:col-span-5">
-            <div className="aspect-[4/5] overflow-hidden bg-muted">
-              <img src={business.founderPhoto} alt="Lillia Key, founder of Lenore’s Kitchen Catering" loading="lazy" className="h-full w-full object-cover object-top" />
-            </div>
-          </Reveal>
-          <Reveal delay={150} className="md:col-span-6 md:col-start-7">
-            <SectionLabel>Our story & legacy</SectionLabel>
-            <h2 className="mt-8 text-4xl leading-tight md:text-5xl">A Vision Rooted in Family. A Legacy Built on Service.</h2>
-            <div className="mt-6 space-y-5 leading-relaxed text-muted-foreground">
-              <p>Growing up in Chicago’s Englewood community, Lillia Key watched her mother, grandmother and great-aunts throw fabulous family parties — and absorbed everything she could about cooking and entertaining.</p>
-              <p>In college she fine-tuned those skills cooking for her neighborhood and planning parties in major downtown hotels. The home-based business grew into her church’s commercial kitchen, then its own facility, serving not only soul food but love and respect.</p>
-            </div>
-            <div className="mt-8"><ArrowLink to="/about">Read Our Story</ArrowLink></div>
+            <Button asChild variant="editorial-light" size="xl" className="mt-10"><Link to="/" hash="catering">Explore Catering</Link></Button>
           </Reveal>
         </div>
       </section>
@@ -141,47 +125,13 @@ function Home() {
         </div>
       </section>
 
-      {/* Gallery LKC */}
-      <section className="relative overflow-hidden">
-        <img src={gallerySpace} alt="Representative image of an upscale art gallery event space" loading="lazy" width={1600} height={1072} className="h-[70vh] min-h-[480px] w-full object-cover" />
-        <div className="absolute inset-0 bg-overlay/45" />
-        <div className="container-site absolute inset-0 flex items-center">
-          <Reveal className="max-w-lg bg-ivory p-8 md:p-12">
-            <p className="eyebrow text-gold">Opened 2022</p>
-            <h2 className="mt-5 text-4xl md:text-5xl">Discover Gallery LKC.</h2>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
-              An upscale art gallery and event space reflecting a broader vision of creativity, gathering, and community on Chicago’s South Side.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="editorial" size="xl"><a href={business.galleryLkcUrl} target="_blank" rel="noreferrer">Explore Gallery LKC</a></Button>
-              <Button asChild variant="editorial-outline" size="xl"><Link to="/gallery-lkc">Learn More</Link></Button>
-            </div>
-            <p className="mt-6 text-xs text-muted-foreground">Image is representative, not a photograph of Gallery LKC.</p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Media preview */}
-      <section className="py-24 md:py-32">
-        <div className="container-site">
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <Reveal>
-              <SectionLabel>From our events</SectionLabel>
-              <h2 className="mt-6 text-4xl md:text-5xl">The Gallery</h2>
-            </Reveal>
-            <Button asChild variant="editorial-outline" size="xl"><Link to="/gallery">View Our Gallery</Link></Button>
-          </div>
-          <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-6 md:gap-4">
-            {preview.map((src, i) => (
-              <Link key={src} to="/gallery" className={`group overflow-hidden bg-muted ${i === 0 ? "col-span-2 row-span-2 aspect-square" : "aspect-square"} ${i === 0 ? "md:col-span-2" : ""}`}>
-                <img src={src} alt={`Lenore’s Kitchen catering photo ${i + 1}`} loading="lazy" className="img-zoom h-full w-full object-cover" />
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <AboutSection />
+      <CateringSection />
+      <GallerySection />
+      <MediaSection />
+      <GalleryLkcSection />
       <CateringCta />
+      <ContactSection />
     </>
   );
 }

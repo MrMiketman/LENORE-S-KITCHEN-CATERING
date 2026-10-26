@@ -16,10 +16,10 @@ export function SiteFooter() {
           <ul className="space-y-3 text-sm">
             {mainNav.map((n) => (
               <li key={n.to}>
-                <Link to={n.to} className="text-ivory/80 hover:text-ivory">{n.label}</Link>
+                <Link to="/" hash={n.to.slice(1) || "home"} className="text-ivory/80 hover:text-ivory">{n.label}</Link>
               </li>
             ))}
-            <li><Link to="/gallery-lkc" className="text-ivory/80 hover:text-ivory">Gallery LKC</Link></li>
+            <li><Link to="/" hash="gallery-lkc" className="text-ivory/80 hover:text-ivory">Gallery LKC</Link></li>
           </ul>
         </nav>
         <div className="md:col-span-4">
