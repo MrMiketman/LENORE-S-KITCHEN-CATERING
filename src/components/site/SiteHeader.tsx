@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { business, mainNav } from "@/content/site";
 import { cn } from "@/lib/utils";
+import lkcRose from "@/assets/lkc-rose.png.asset.json";
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
