@@ -19,7 +19,7 @@ export function MusicPlayer() {
   const [open, setOpen] = useState(true);
   const [time, setTime] = useState(0);
   const [dur, setDur] = useState(0);
-  const [vol, setVol] = useState(0.05);
+  const [vol, setVol] = useState(0.025);
   const t = tracks[i] ?? tracks[0]!;
 
   useEffect(() => {
@@ -150,7 +150,7 @@ export function MusicPlayer() {
               )}
             </div>
             <div className="flex items-center gap-2">
-              <button type="button" onClick={() => setVol((v) => (v ? 0 : 0.05))} aria-label={vol ? "Mute" : "Unmute"} className="text-ivory/70 hover:text-ivory">
+              <button type="button" onClick={() => setVol((v) => (v ? 0 : 0.025))} aria-label={vol ? "Mute" : "Unmute"} className="text-ivory/70 hover:text-ivory">
                 {vol ? <Volume2 className="size-4" /> : <VolumeX className="size-4" />}
               </button>
               <input type="range" min={0} max={1} step={0.01} value={vol} onChange={(e) => setVol(+e.target.value)} aria-label="Volume" className="h-1 w-20 cursor-pointer accent-[var(--gold)]" />
