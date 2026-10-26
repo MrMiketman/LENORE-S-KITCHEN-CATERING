@@ -61,6 +61,7 @@ function Lightbox({
   }, [go, setIndex]);
 
   const p = photos[index];
+  if (!p) return null;
   return (
     <div
       role="dialog"

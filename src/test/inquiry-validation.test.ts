@@ -13,7 +13,7 @@ describe("inquiry validation", () => {
     expect(Object.keys(validateFields(fields, {}))).toEqual(["name", "email", "phone", "guests"]);
   });
   it("rejects a bad email", () => {
-    expect(validateFields(fields, { name: "A", email: "nope", phone: "773-633-7999", guests: "50" }).email).toBeDefined();
+    expect(validateFields(fields, { name: "A", email: "nope", phone: "773-633-7999", guests: "50" })["email"]).toBeDefined();
   });
   it("accepts a complete inquiry", () => {
     expect(validateFields(fields, { name: "A", email: "a@b.co", phone: "773-633-7999", guests: "50" })).toEqual({});

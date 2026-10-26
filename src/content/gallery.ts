@@ -21,7 +21,7 @@ export const videoGallery = [
 
 export function pick(galleryNumber: number, index: number) {
   const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`);
-  return c?.images[index] ?? galleryCollections[0].images[0];
+  return c?.images[index] ?? galleryCollections[0]?.images[0] ?? "";
 }
 
 export const allPhotos = galleryCollections.flatMap((c) =>
