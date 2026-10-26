@@ -78,23 +78,23 @@ export function MusicPlayer() {
       aria-label={playing ? "Pause music" : "Play music"}
       className={cn(
         "relative grid shrink-0 place-items-center rounded-full bg-gold text-ink transition hover:brightness-110",
-        small ? "size-9" : "size-11",
+        small ? "size-6" : "size-7",
       )}
     >
       {!started && <span className="absolute inset-0 animate-ping rounded-full bg-gold/60" aria-hidden />}
-      {playing ? <Pause className="relative size-4" /> : <Play className="relative size-4 translate-x-px" />}
+      {playing ? <Pause className="relative size-3" /> : <Play className="relative size-3 translate-x-px" />}
     </button>
   );
 
   const Vinyl = () => (
     <div
       className={cn(
-        "grid size-10 shrink-0 place-items-center rounded-full border border-ivory/20 bg-[radial-gradient(circle,var(--gold)_18%,var(--ink)_20%,var(--ink-2)_60%,var(--ink)_100%)]",
+        "grid size-6 shrink-0 place-items-center rounded-full border border-ivory/20 bg-[radial-gradient(circle,var(--gold)_18%,var(--ink)_20%,var(--ink-2)_60%,var(--ink)_100%)]",
         playing && "animate-[spin_3s_linear_infinite]",
       )}
       aria-hidden
     >
-      <span className="size-1.5 rounded-full bg-ink" />
+      <span className="size-1 rounded-full bg-ink" />
     </div>
   );
 
@@ -109,59 +109,59 @@ export function MusicPlayer() {
         onEnded={() => (tracks.length > 1 ? skip(1) : setPlaying(false))}
       />
       {open ? (
-        <div className="w-[19rem] rounded-2xl border border-ivory/10 bg-ink/95 p-4 shadow-2xl backdrop-blur">
-          <div className="flex items-center gap-3">
+        <div className="w-[15rem] rounded-xl border border-ivory/10 bg-ink/95 p-2.5 shadow-2xl backdrop-blur">
+          <div className="flex items-center gap-2">
             <Vinyl />
             <div className="min-w-0 flex-1">
-              <p className="truncate font-serif text-base leading-tight">{t.title}</p>
-              <p className="truncate text-xs text-taupe">{t.artist}</p>
+              <p className="truncate font-serif text-xs leading-tight">{t.title}</p>
+              <p className="truncate text-[0.62rem] text-taupe">{t.artist}</p>
             </div>
             {playing && (
-              <div className="flex h-4 items-end gap-0.5" aria-hidden>
+              <div className="flex h-3 items-end gap-0.5" aria-hidden>
                 {[0, 1, 2, 3].map((b) => (
                   <span key={b} className="w-0.5 animate-pulse rounded bg-gold" style={{ height: `${40 + ((b * 37) % 60)}%`, animationDelay: `${b * 150}ms` }} />
                 ))}
               </div>
             )}
             <button type="button" onClick={() => setOpen(false)} aria-label="Collapse player" className="p-1 text-ivory/60 hover:text-ivory">
-              <ChevronDown className="size-4" />
+              <ChevronDown className="size-3.5" />
             </button>
           </div>
 
-          <div className="mt-3">
+          <div className="mt-2">
             <input
               type="range" min={0} max={dur || 0} step={0.1} value={time}
               onChange={(e) => { if (audio.current) audio.current.currentTime = +e.target.value; }}
               aria-label="Seek" className="h-1 w-full cursor-pointer accent-[var(--gold)]"
             />
-            <div className="mt-1 flex justify-between text-[0.65rem] tabular-nums text-ivory/60">
+            <div className="mt-1 flex justify-between text-[0.6rem] tabular-nums text-ivory/60">
               <span>{fmt(time)}</span><span>{fmt(dur)}</span>
             </div>
           </div>
 
-          <div className="mt-2 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-2">
+          <div className="mt-1.5 flex items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5">
               {tracks.length > 1 && (
-                <button type="button" onClick={() => skip(-1)} aria-label="Previous track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipBack className="size-4" /></button>
+                <button type="button" onClick={() => skip(-1)} aria-label="Previous track" className="p-1 text-ivory/80 hover:text-ivory"><SkipBack className="size-3.5" /></button>
               )}
               <PlayBtn />
               {tracks.length > 1 && (
-                <button type="button" onClick={() => skip(1)} aria-label="Next track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipForward className="size-4" /></button>
+                <button type="button" onClick={() => skip(1)} aria-label="Next track" className="p-1 text-ivory/80 hover:text-ivory"><SkipForward className="size-3.5" /></button>
               )}
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <button type="button" onClick={() => setVol((v) => (v ? 0 : 0.025))} aria-label={vol ? "Mute" : "Unmute"} className="text-ivory/70 hover:text-ivory">
-                {vol ? <Volume2 className="size-4" /> : <VolumeX className="size-4" />}
+                {vol ? <Volume2 className="size-3.5" /> : <VolumeX className="size-3.5" />}
               </button>
-              <input type="range" min={0} max={1} step={0.01} value={vol} onChange={(e) => setVol(+e.target.value)} aria-label="Volume" className="h-1 w-20 cursor-pointer accent-[var(--gold)]" />
+              <input type="range" min={0} max={1} step={0.01} value={vol} onChange={(e) => setVol(+e.target.value)} aria-label="Volume" className="h-1 w-14 cursor-pointer accent-[var(--gold)]" />
             </div>
           </div>
         </div>
       ) : (
-        <div className="flex items-center gap-2 rounded-full border border-ivory/10 bg-ink/95 py-1.5 pl-1.5 pr-3 shadow-2xl backdrop-blur">
+        <div className="flex items-center gap-1.5 rounded-full border border-ivory/10 bg-ink/95 py-1 pl-1 pr-2.5 shadow-2xl backdrop-blur">
           <PlayBtn small />
-          <button type="button" onClick={() => setOpen(true)} aria-label="Expand player" className="flex max-w-40 items-center gap-2 text-xs">
-            <Music className={cn("size-3.5 text-gold", playing && "animate-pulse")} />
+          <button type="button" onClick={() => setOpen(true)} aria-label="Expand player" className="flex max-w-28 items-center gap-1.5 text-[0.65rem]">
+            <Music className={cn("size-3 text-gold", playing && "animate-pulse")} />
             <span className="truncate">{t.title}</span>
           </button>
         </div>
