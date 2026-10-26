@@ -21,7 +21,7 @@ export function MusicPlayer() {
   const [time, setTime] = useState(0);
   const [dur, setDur] = useState(0);
   const [vol, setVol] = useState(0.6);
-  const t = tracks[i];
+  const t = tracks[i] ?? tracks[0]!;
 
   useEffect(() => {
     if (audio.current) audio.current.volume = vol;
