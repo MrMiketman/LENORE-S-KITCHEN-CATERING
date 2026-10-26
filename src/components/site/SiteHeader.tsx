@@ -48,10 +48,13 @@ export function SiteHeader() {
         )}
       >
         <div className="container-site flex h-20 items-center justify-between gap-6">
-          <Link to="/" className="flex flex-col leading-none" aria-label={`${business.name} home`}>
-            <span className="font-serif text-2xl md:text-[1.7rem]">Lenore’s Kitchen</span>
-            <span className={cn("eyebrow mt-1 text-[0.58rem]", overHero ? "text-taupe" : "text-gold")}>
-              Catering Inc. · Chicago
+          <Link to="/" className="flex items-center gap-3" aria-label={`${business.name} home`}>
+            <img src={lkcRose.url} alt="" className="h-11 w-11 shrink-0 object-contain" />
+            <span className="flex flex-col leading-none">
+              <span className="font-serif text-2xl md:text-[1.7rem]">Lenore’s Kitchen</span>
+              <span className={cn("eyebrow mt-1 text-[0.58rem]", overHero ? "text-taupe" : "text-gold")}>
+                Catering Inc. · Chicago
+              </span>
             </span>
           </Link>
 
