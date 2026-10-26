@@ -23,7 +23,7 @@ function NotFoundComponent() {
     <section className="flex min-h-[80vh] items-center pt-24">
       <div className="container-site text-center">
         <p className="eyebrow text-gold">Page not found</p>
-        <h1 className="mt-6 text-5xl md:text-7xl">This table hasn’t been set.</h1>
+        <h1 className="mt-6 text-base leading-snug md:text-7xl">This table hasn’t been set.</h1>
         <p className="mx-auto mt-6 max-w-md text-muted-foreground">
           The page you’re looking for doesn’t exist or has moved.
         </p>
