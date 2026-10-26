@@ -18,7 +18,7 @@ export const Route = createFileRoute("/catering")({
   component: Catering,
 });
 
-export const cateringFields: FieldDef[] = [
+const cateringFields: FieldDef[] = [
   { name: "name", label: "Full name", required: true },
   { name: "email", label: "Email address", type: "email", required: true },
   { name: "phone", label: "Phone number", type: "tel", required: true },
