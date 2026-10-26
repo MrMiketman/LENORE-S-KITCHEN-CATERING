@@ -20,9 +20,9 @@ export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title:
   );
 }
 
-export function SectionLabel({ children, light }: { children: ReactNode; light?: boolean }) {
+export function SectionLabel({ children, light, center }: { children: ReactNode; light?: boolean; center?: boolean }) {
   return (
-    <div className="flex items-center gap-4">
+    <div className={cn("flex items-center gap-4", center && "justify-center")}>
       <span className="gold-rule" />
       <p className={cn("eyebrow", light ? "text-taupe" : "text-muted-foreground")}>{children}</p>
     </div>
