@@ -99,11 +99,11 @@ export function MusicPlayer() {
   );
 
   return (
-    <div className="fixed bottom-4 right-4 z-40 text-ivory">
+    <div ref={wrap} className="fixed bottom-4 right-4 z-40 text-ivory">
       <audio
         ref={audio}
         src={t.src}
-        preload="metadata"
+        preload="auto"
         onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
         onLoadedMetadata={(e) => setDur(e.currentTarget.duration)}
         onEnded={() => (tracks.length > 1 ? skip(1) : setPlaying(false))}
