@@ -109,7 +109,7 @@ export function MusicPlayer() {
         onEnded={() => (tracks.length > 1 ? skip(1) : setPlaying(false))}
       />
       {open ? (
-        <div className="w-[15rem] rounded-xl border border-ivory/10 bg-ink/95 p-2.5 shadow-2xl backdrop-blur">
+        <div className="w-[13rem] rounded-xl border border-ivory/10 bg-ink/95 p-2 shadow-2xl backdrop-blur">
           <div className="flex items-center gap-2">
             <Vinyl />
             <div className="min-w-0 flex-1">
@@ -128,7 +128,7 @@ export function MusicPlayer() {
             </button>
           </div>
 
-          <div className="mt-2">
+          <div className="mt-1.5">
             <input
               type="range" min={0} max={dur || 0} step={0.1} value={time}
               onChange={(e) => { if (audio.current) audio.current.currentTime = +e.target.value; }}
@@ -139,7 +139,7 @@ export function MusicPlayer() {
             </div>
           </div>
 
-          <div className="mt-1.5 flex items-center justify-between gap-2">
+          <div className="mt-1 flex items-center justify-between gap-2">
             <div className="flex items-center gap-1.5">
               {tracks.length > 1 && (
                 <button type="button" onClick={() => skip(-1)} aria-label="Previous track" className="p-1 text-ivory/80 hover:text-ivory"><SkipBack className="size-3.5" /></button>
