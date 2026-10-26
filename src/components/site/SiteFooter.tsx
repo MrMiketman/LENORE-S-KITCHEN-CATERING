@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { business, mainNav } from "@/content/site";
-import logoLight from "@/assets/lkc-logo-light.webp.asset.json";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -8,7 +7,6 @@ export function SiteFooter() {
     <footer className="bg-ink text-ivory">
       <div className="container-site grid gap-12 py-20 md:grid-cols-12">
         <div className="md:col-span-5">
-          <img src={logoLight.url} alt="" width={150} height={150} loading="lazy" className="mb-6 h-28 w-28" />
           <p className="font-serif text-3xl">{business.name}</p>
           <span className="gold-rule my-6" />
           <p className="max-w-sm font-serif text-lg italic text-taupe">“{business.motto}”</p>

@@ -10,7 +10,7 @@ export const business = {
   serviceArea: "Chicagoland and Northwest Indiana",
   galleryLkcUrl: "https://gallerylkc.com/",
   facebookUrl: "https://www.facebook.com/lenoreskitchen/",
-  founderPhoto: "/__l5e/assets-v1/e464288e-ef35-4792-949b-224386c4c9fd/2026_01_0-lilia00-1.jpg",
+  founderPhoto: "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/0-lilia00-1.jpg",
   pricingNotice:
     "Please note: Menus currently found on the internet may not reflect current offerings or pricing. Please call Lenore’s Kitchen Catering at 773-633-7999 for current menu information and pricing.",
 };

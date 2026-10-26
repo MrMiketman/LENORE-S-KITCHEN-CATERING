@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { business, mainNav } from "@/content/site";
 import { cn } from "@/lib/utils";
-import logoLight from "@/assets/lkc-logo-light.webp.asset.json";
-import logoDark from "@/assets/lkc-logo-dark.png.asset.json";
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -49,14 +47,11 @@ export function SiteHeader() {
         )}
       >
         <div className="container-site flex h-20 items-center justify-between gap-6">
-          <Link to="/" className="flex items-center" aria-label={`${business.name} home`}>
-            <img
-              src={overHero ? logoLight.url : logoDark.url}
-              alt={business.name}
-              width={150}
-              height={150}
-              className="h-16 w-16 md:h-[4.5rem] md:w-[4.5rem]"
-            />
+          <Link to="/" className="flex flex-col leading-none" aria-label={`${business.name} home`}>
+            <span className="font-serif text-2xl md:text-[1.7rem]">Lenore’s Kitchen</span>
+            <span className={cn("eyebrow mt-1 text-[0.58rem]", overHero ? "text-taupe" : "text-gold")}>
+              Catering Inc. · Chicago
+            </span>
           </Link>
 
           <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">

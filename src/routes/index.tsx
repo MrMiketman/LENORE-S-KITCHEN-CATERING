@@ -34,9 +34,9 @@ function Home() {
         <img src={heroImg} alt="Candlelit catered buffet with chafing dishes, salads and fruit" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-[20%_50%]" />
         <div className="hero-scrim absolute inset-0" />
         <div className="container-site relative flex h-full items-end pb-16 md:items-center md:justify-end md:pb-0">
-          <Reveal className="max-w-xl translate-y-2.5">
+          <Reveal className="max-w-xl">
             <p className="eyebrow text-gold">Lenore’s Kitchen Catering Inc. · Chicago</p>
-            <h1 className="mt-6 text-5xl leading-[1.03] md:text-7xl">Gathering Becomes Something Extraordinary.</h1>
+            <h1 className="mt-6 text-5xl leading-[1.03] md:text-7xl">Where Every Gathering Becomes Something Extraordinary.</h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-ivory/80">
               Thoughtful catering, heartfelt hospitality, and a tradition of going the extra mile.
             </p>

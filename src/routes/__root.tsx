@@ -16,7 +16,6 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
-import { installContentProtection } from "@/lib/content-protection";
 
 function NotFoundComponent() {
   return (
@@ -84,9 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "icon", type: "image/png", sizes: "512x512", href: "/favicon.png" },
-      { rel: "apple-touch-icon", type: "image/png", sizes: "180x180", href: "/apple-touch-icon.png" },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -118,7 +115,6 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  useEffect(() => installContentProtection(document), []);
 
   return (
     <QueryClientProvider client={queryClient}>
