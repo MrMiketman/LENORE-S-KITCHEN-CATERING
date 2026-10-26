@@ -30,10 +30,10 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[max(100dvh,600px)] overflow-hidden bg-ink text-ivory">
+      <section className="relative h-[92svh] min-h-[600px] overflow-hidden bg-ink text-ivory">
         <img src={heroImg} alt="Candlelit catered buffet with chafing dishes, salads and fruit" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-[20%_50%]" />
         <div className="hero-scrim absolute inset-0" />
-        <div className="container-site relative flex min-h-[max(100dvh,600px)] items-end pb-16 md:items-center md:justify-end md:pb-0">
+        <div className="container-site relative flex h-full items-end pb-16 md:items-center md:justify-end md:pb-0">
           <Reveal className="max-w-xl">
             <p className="eyebrow text-gold">Lenore’s Kitchen Catering Inc. · Chicago</p>
             <h1 className="mt-6 text-5xl leading-[1.03] md:text-7xl">Where Every Gathering Becomes Something Extraordinary.</h1>
@@ -143,7 +143,7 @@ function Home() {
 
       {/* Gallery LKC */}
       <section className="relative overflow-hidden">
-        <img src={gallerySpace} alt="Representative image of an upscale art gallery event space" loading="lazy" width={1600} height={1072} className="h-[70dvh] min-h-[480px] w-full object-cover" />
+        <img src={gallerySpace} alt="Representative image of an upscale art gallery event space" loading="lazy" width={1600} height={1072} className="h-[70vh] min-h-[480px] w-full object-cover" />
         <div className="absolute inset-0 bg-overlay/45" />
         <div className="container-site absolute inset-0 flex items-center">
           <Reveal className="max-w-lg bg-ivory p-8 md:p-12">

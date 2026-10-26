@@ -77,7 +77,7 @@ function Lightbox({
         touchX.current = null;
       }}
     >
-      <img key={p.src} src={p.src} alt={p.alt} className="max-h-[82dvh] max-w-[92vw] object-contain animate-in fade-in duration-500" />
+      <img key={p.src} src={p.src} alt={p.alt} className="max-h-[82vh] max-w-[92vw] object-contain animate-in fade-in duration-500" />
       <p className="eyebrow absolute bottom-6 left-1/2 -translate-x-1/2 text-taupe">
         {index + 1} / {n}
       </p>

@@ -11,4 +11,3 @@
 
 - Site content (business facts, story, gallery photo URLs) lives in `src/content/*`; pages only render it — keeps verified copy editable in one place.
 - Inquiry/contact forms validate client-side but have no delivery backend yet; they must never show a false success message.
-- Full-height sections, image bands and overlays size with dynamic viewport units (`dvh`, e.g. `min-h-[100dvh]`) rather than `h-screen`/`vh`, so phone browser chrome never crops them.
