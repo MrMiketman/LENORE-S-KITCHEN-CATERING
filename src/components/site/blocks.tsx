@@ -8,11 +8,11 @@ import { cn } from "@/lib/utils";
 
 export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
-    <section className="border-b border-border pb-16 pt-36 md:pb-24 md:pt-44">
+    <section className="border-b border-border pb-16 pt-24 md:pb-24 md:pt-32">
       <div className="container-site">
         <Reveal>
           <p className="eyebrow text-gold">{eyebrow}</p>
-          <h1 className="mt-6 max-w-5xl text-5xl leading-[1.05] md:text-7xl">{title}</h1>
+          <h2 className="mt-6 max-w-5xl text-5xl leading-[1.05] md:text-7xl">{title}</h2>
           {intro && <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">{intro}</p>}
         </Reveal>
       </div>
@@ -31,7 +31,7 @@ export function SectionLabel({ children, light, center }: { children: ReactNode;
 
 export function ArrowLink({ to, children }: { to: "/about" | "/catering" | "/gallery" | "/contact" | "/media" | "/gallery-lkc"; children: ReactNode }) {
   return (
-    <Link to={to} className="eyebrow group inline-flex items-center gap-3 border-b border-gold pb-1 text-ink">
+    <Link to="/" hash={to.slice(1)} className="eyebrow group inline-flex items-center gap-3 border-b border-gold pb-1 text-ink">
       {children} <span className="transition-transform group-hover:translate-x-1">→</span>
     </Link>
   );
@@ -70,7 +70,7 @@ export function CateringCta({
             <a href={business.phoneHref}><Phone /> Call About Catering</a>
           </Button>
           <Button asChild variant="editorial-ghost-light" size="xl">
-            <Link to="/contact">Send an Inquiry</Link>
+            <Link to="/" hash="contact">Send an Inquiry</Link>
           </Button>
         </div>
       </Reveal>
