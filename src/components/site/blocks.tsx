@@ -12,7 +12,7 @@ export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title:
       <div className="container-site">
         <Reveal>
           <p className="eyebrow text-gold">{eyebrow}</p>
-          <h1 className="mt-6 max-w-5xl text-5xl leading-[1.05] md:text-7xl">{title}</h1>
+          <h1 className="mt-6 max-w-5xl text-base leading-snug md:text-7xl md:leading-[1.05]">{title}</h1>
           {intro && <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">{intro}</p>}
         </Reveal>
       </div>

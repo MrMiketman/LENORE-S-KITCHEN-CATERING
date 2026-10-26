@@ -23,7 +23,7 @@ function GalleryLkc() {
         <div className="container-site grid gap-12 md:grid-cols-12">
           <Reveal className="md:col-span-7">
             <p className="eyebrow text-gold">Gallery LKC · Est. 2022</p>
-            <h1 className="mt-6 text-5xl leading-[1.05] md:text-7xl">Art, Gathering & Community on Chicago’s South Side.</h1>
+            <h1 className="mt-6 text-base leading-snug md:text-7xl md:leading-[1.05]">Art, Gathering & Community on Chicago’s South Side.</h1>
           </Reveal>
           <Reveal delay={150} className="space-y-6 leading-relaxed text-ivory/75 md:col-span-4 md:col-start-9 md:pt-20">
             <p>In 2022, Ms. Lillia Key — founder of Lenore’s Kitchen Catering — opened Gallery LKC, an upscale art gallery and event space located on the south side of Chicago.</p>
