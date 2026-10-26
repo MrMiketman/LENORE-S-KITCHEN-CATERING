@@ -18,3 +18,12 @@ export const videoGallery = [
   "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250628_140714.mp4",
   "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20251008_105651.mp4",
 ];
+
+export function pick(galleryNumber: number, index: number) {
+  const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`);
+  return c?.images[index] ?? galleryCollections[0].images[0];
+}
+
+export const allPhotos = galleryCollections.flatMap((c) =>
+  c.images.map((src, i) => ({ src, alt: `Lenore’s Kitchen catering photograph, ${c.title}, image ${i + 1}`, collection: c.id })),
+);

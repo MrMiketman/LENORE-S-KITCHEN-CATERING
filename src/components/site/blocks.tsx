@@ -60,7 +60,7 @@ export function CateringCta({
   return (
     <section className="bg-ink py-24 text-ivory md:py-36">
       <Reveal className="container-site text-center">
-        <SectionLabel light>
+        <SectionLabel light center>
           <span>Plan with us</span>
         </SectionLabel>
         <h2 className="mx-auto mt-8 max-w-4xl text-4xl leading-tight md:text-6xl">{title}</h2>
