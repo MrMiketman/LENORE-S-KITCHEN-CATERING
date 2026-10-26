@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { MusicPlayer } from "@/components/site/MusicPlayer";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 
@@ -125,6 +126,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <SiteFooter />
+      <MusicPlayer />
     </QueryClientProvider>
   );
 }
