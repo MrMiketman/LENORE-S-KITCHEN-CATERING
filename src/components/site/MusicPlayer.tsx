@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 
 const tracks = [
   { title: "I Want You", artist: "Daniel Davis", src: song.url },
-  { title: "Track Title", artist: "Artist Name", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-  { title: "Track Title", artist: "Artist Name", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
 ];
 
 const fmt = (s: number) =>
@@ -76,7 +74,7 @@ export function MusicPlayer() {
         preload="metadata"
         onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
         onLoadedMetadata={(e) => setDur(e.currentTarget.duration)}
-        onEnded={() => skip(1)}
+        onEnded={() => (tracks.length > 1 ? skip(1) : setPlaying(false))}
       />
       {open ? (
         <div className="w-[19rem] rounded-2xl border border-ivory/10 bg-ink/95 p-4 shadow-2xl backdrop-blur">
@@ -111,9 +109,13 @@ export function MusicPlayer() {
 
           <div className="mt-2 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
-              <button type="button" onClick={() => skip(-1)} aria-label="Previous track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipBack className="size-4" /></button>
+              {tracks.length > 1 && (
+                <button type="button" onClick={() => skip(-1)} aria-label="Previous track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipBack className="size-4" /></button>
+              )}
               <PlayBtn />
-              <button type="button" onClick={() => skip(1)} aria-label="Next track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipForward className="size-4" /></button>
+              {tracks.length > 1 && (
+                <button type="button" onClick={() => skip(1)} aria-label="Next track" className="p-1.5 text-ivory/80 hover:text-ivory"><SkipForward className="size-4" /></button>
+              )}
             </div>
             <div className="flex items-center gap-2">
               <button type="button" onClick={() => setVol((v) => (v ? 0 : 0.6))} aria-label={vol ? "Mute" : "Unmute"} className="text-ivory/70 hover:text-ivory">
