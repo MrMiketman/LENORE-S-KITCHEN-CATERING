@@ -60,6 +60,7 @@ export function SiteHeader() {
                 key={item.to}
                 to="/"
                 hash={item.to.slice(1) || "home"}
+                activeOptions={{ includeHash: true }}
                 className="eyebrow relative py-2 opacity-85 transition-opacity hover:opacity-100 data-[status=active]:opacity-100 data-[status=active]:after:absolute data-[status=active]:after:inset-x-0 data-[status=active]:after:-bottom-0.5 data-[status=active]:after:h-px data-[status=active]:after:bg-gold"
               >
                 {item.label}
@@ -95,6 +96,7 @@ export function SiteHeader() {
                 <Link
                   to="/"
                   hash={item.to.slice(1) || "home"}
+                activeOptions={{ includeHash: true }}
                   onClick={() => setOpen(false)}
                   className="block py-4 font-serif text-3xl text-ink"
                 >
