@@ -34,7 +34,7 @@ function GalleryLkc() {
         </div>
       </section>
       <figure>
-        <img src={gallerySpace} alt="Representative image of an upscale gallery event space" width={1600} height={1072} loading="lazy" className="h-[75vh] min-h-[420px] w-full object-cover" />
+        <img src={gallerySpace} alt="Representative image of an upscale gallery event space" width={1600} height={1072} loading="lazy" className="h-[75dvh] min-h-[420px] w-full object-cover" />
         <figcaption className="container-site py-3 text-xs text-muted-foreground">Representative image — not a photograph of Gallery LKC.</figcaption>
       </figure>
       <section className="py-24 md:py-32">

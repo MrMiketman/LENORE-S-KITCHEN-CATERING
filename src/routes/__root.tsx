@@ -19,7 +19,7 @@ import { business } from "@/content/site";
 
 function NotFoundComponent() {
   return (
-    <section className="flex min-h-[80vh] items-center pt-24">
+    <section className="flex min-h-[80dvh] items-center pt-24">
       <div className="container-site text-center">
         <p className="eyebrow text-gold">Page not found</p>
         <h1 className="mt-6 text-5xl md:text-7xl">This table hasn’t been set.</h1>
@@ -43,7 +43,7 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   }, [error]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div className="flex min-h-[100dvh] items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="text-3xl text-foreground">This page didn't load</h1>
         <p className="mt-2 text-sm text-muted-foreground">
