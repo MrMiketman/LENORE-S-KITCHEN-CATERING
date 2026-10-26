@@ -17,6 +17,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { MusicPlayer } from "@/components/site/MusicPlayer";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
+import { installContentProtection } from "@/lib/content-protection";
 
 function NotFoundComponent() {
   return (
@@ -118,6 +119,7 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  useEffect(() => installContentProtection(document), []);
 
   return (
     <QueryClientProvider client={queryClient}>
