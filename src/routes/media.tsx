@@ -24,10 +24,21 @@ function Media() {
               <div className="aspect-[9/16] overflow-hidden bg-ink">
                 <video controls preload="metadata" playsInline className="h-full w-full object-cover" aria-label={`Lenore’s Kitchen video ${i + 1}`}>
                   <source src={`${src}#t=0.5`} type="video/mp4" />
-                  Your browser does not support video playback.
+                  Your browser does not support video playback.{" "}
+                  <a href={src} className="underline underline-offset-4">Open this video</a>.
                 </video>
               </div>
-              <figcaption className="eyebrow mt-4 text-muted-foreground">Video {String(i + 1).padStart(2, "0")}</figcaption>
+              <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-3">
+                <span className="eyebrow text-muted-foreground">Video {String(i + 1).padStart(2, "0")}</span>
+                <a
+                  href={src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="eyebrow inline-flex items-center gap-2 border-b border-gold pb-1 text-ink"
+                >
+                  Open video {String(i + 1).padStart(2, "0")} <span aria-hidden="true">↗</span>
+                </a>
+              </figcaption>
             </figure>
           ))}
         </div>
