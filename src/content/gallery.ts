@@ -1,4 +1,5 @@
 import daniel01 from "@/assets/daniel01.mp4.asset.json";
+import daniel02 from "@/assets/daniel02.mp4.asset.json";
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
 import lkc2 from "@/assets/lkc2.jpg.asset.json";
 import lkc3 from "@/assets/lkc3.jpg.asset.json";
@@ -38,7 +39,7 @@ export const mediaItems: MediaItem[] = [
   },
   {
     kind: "video",
-    src: null,
+    src: daniel02.url,
     poster: lkc2.url,
     alt: "Chopped zucchini, yellow squash, red bell pepper and eggplant being tossed with a spatula as they cook.",
     label: "Video 02",
