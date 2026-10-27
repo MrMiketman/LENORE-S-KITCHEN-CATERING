@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import audioAsset from "@/assets/06_i_want_you.mp3.asset.json";
 
-/** Starting level: 5% of full volume, by request. */
-const DEFAULT_VOLUME = 0.05;
+/** Starting level: 10% of full volume, by request. */
+const DEFAULT_VOLUME = 0.1;
 
 /**
  * Small fixed-corner music player. Autoplays as soon as the browser allows;
  * if autoplay is blocked until a visitor interaction, it starts on the first
  * click, tap, or keypress. Mounted once in the root route so the track keeps
  * playing across page navigation. The visitor can adjust the level with the
- * slider; it always opens at 5%.
+ * slider; it always opens at 10%.
  */
 export function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement>(null);
