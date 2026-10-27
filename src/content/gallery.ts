@@ -1,4 +1,4 @@
-import daniel01 from "@/assets/daniel01.mp4.asset.json";
+import daniel001 from "@/assets/daniel001.mp4.asset.json";
 import daniel02 from "@/assets/daniel02.mp4.asset.json";
 import daniel03 from "@/assets/daniel03.mp4.asset.json";
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
@@ -33,7 +33,7 @@ export type MediaItem = {
 export const mediaItems: MediaItem[] = [
   {
     kind: "video",
-    src: daniel01.url,
+    src: daniel001.url,
     poster: lkc1.url,
     alt: "A silver bowl of shredded cabbage, carrot and leafy salad on an ornate tentacled silver stand, set on a black tablecloth draped with red satin and scattered with rose petals and crystal gems.",
     label: "Video 01",
