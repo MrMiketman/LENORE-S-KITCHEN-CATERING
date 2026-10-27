@@ -126,6 +126,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <SiteFooter />
+      <AudioPlayer />
     </QueryClientProvider>
   );
 }
