@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { AudioPlayer } from "@/components/site/AudioPlayer";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 
