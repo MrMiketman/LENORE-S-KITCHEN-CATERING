@@ -1,5 +1,8 @@
 # Roadmap
 
+- [x] Small mp3 player (fixed bottom-right corner of every page): plays the uploaded "06_I_Want_You.mp3" on repeat; tries autoplay immediately and starts on the visitor's first click/tap/keypress when the browser blocks it; play/pause button; music keeps playing across page navigation.
+
+
 - [x] Download original photos from bisque-curlew-779356.hostingersite.com: 282 unique originals in 316 positions across Galleries 1–10, plus page photos and logos; reconnect galleries, original homepage photo and founder portrait. Verified every gallery image and enlarged-photo navigation.
 
 - [x] Make the site favicon from the logo (icon set built, head links wired)
