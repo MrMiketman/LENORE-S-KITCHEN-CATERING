@@ -11,3 +11,5 @@
 - [x] Media page: all three player slots wired to the uploaded videos (daniel01/02/03.mp4)
 - [x] Initial gallery relink: recovered 124 archive copies; now superseded by the original photos recovered from the owner’s Hostinger site, including the previously missing galleries.
 - [x] Homepage background: settled on the candlelit buffet photo from the first build (now a CDN asset); the original-site appetizer photo and the uploaded dessert-buffet photo (bg_00a) stay saved as alternatives.
+- [x] Remove Gallery LKC from the homepage banner, the footer link list and the footer gallerylkc.com link; the /gallery-lkc page itself and its phone-menu entry remain.
+- [x] Media page: delete the "Open video 01/02/03 ↗" links under each player; captions now show only the label and all three videos still play.

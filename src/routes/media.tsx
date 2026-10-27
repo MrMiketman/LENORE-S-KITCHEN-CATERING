@@ -76,18 +76,7 @@ function MediaSlot({ item }: { item: MediaItem }) {
       </div>
       <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-3">
         <span className="eyebrow text-muted-foreground">{item.label}</span>
-        {item.src ? (
-          <a
-            href={item.src}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="eyebrow inline-flex items-center gap-2 border-b border-gold pb-1 text-ink"
-          >
-            Open {item.label.toLowerCase()} <span aria-hidden="true">↗</span>
-          </a>
-        ) : (
-          <span className="eyebrow text-muted-foreground">Coming soon</span>
-        )}
+        {!item.src && <span className="eyebrow text-muted-foreground">Coming soon</span>}
       </figcaption>
     </figure>
   );
