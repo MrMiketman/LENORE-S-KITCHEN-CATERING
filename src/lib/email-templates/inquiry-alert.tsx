@@ -29,7 +29,7 @@ const InquiryAlert = ({ form = 'Website', rows = [] }: Props) => (
 
 export const template = {
   component: InquiryAlert,
-  subject: (d: Record<string, any>) => `New ${d.form ?? 'website'} inquiry`,
+  subject: (d: Record<string, any>) => `New ${d['form'] ?? 'website'} inquiry`,
   displayName: 'New inquiry alert',
   previewData: { form: 'Contact', rows: [{ label: 'Name', value: 'Jane Doe' }, { label: 'Message', value: 'Hello!' }] },
 } satisfies TemplateEntry
