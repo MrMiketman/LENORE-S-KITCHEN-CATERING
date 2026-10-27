@@ -67,7 +67,7 @@ function Catering() {
 
       <section className="py-20 md:py-28">
         <div className="container-site grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
-          {[pick(2, 3), pick(3, 6), pick(10, 5), pick(6, 7), pick(4, 3), pick(1, 6), pick(10, 6), pick(2, 7)].map((src, i) => (
+          {[pick(7, 3), pick(5, 8), pick(10, 5), pick(6, 7), pick(7, 15), pick(10, 12), pick(10, 6), pick(6, 3)].map((src, i) => (
             <div key={src} className={`overflow-hidden bg-muted ${i % 3 === 0 ? "aspect-[3/4]" : "aspect-square"}`}>
               <img src={src} alt="Food prepared and presented by Lenore’s Kitchen Catering" loading="lazy" className="h-full w-full object-cover" />
             </div>

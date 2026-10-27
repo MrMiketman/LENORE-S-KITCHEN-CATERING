@@ -171,8 +171,9 @@ export const mediaItems: MediaItem[] = [
 ];
 
 export function pick(galleryNumber: number, index: number) {
-  const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`);
-  return c?.images[index] ?? galleryCollections[0]?.images[0] ?? "";
+  const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`) ?? galleryCollections[0];
+  if (!c || c.images.length === 0) return "";
+  return c.images[index % c.images.length];
 }
 
 export const allPhotos = galleryCollections.flatMap((c) =>
