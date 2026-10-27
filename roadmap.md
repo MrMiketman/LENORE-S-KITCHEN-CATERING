@@ -10,4 +10,4 @@
 - [x] Media page: three video player slots — each photo becomes a player cover with a play button; clicking shows an honest "coming soon" message until the video file exists
 - [x] Media page: all three player slots wired to the uploaded videos (daniel01/02/03.mp4)
 - [x] Initial gallery relink: recovered 124 archive copies; now superseded by the original photos recovered from the owner’s Hostinger site, including the previously missing galleries.
-- [x] Homepage background: tried the uploaded dessert-buffet photo (bg_00a.jpg, kept at src/assets/bg_00a.jpg.asset.json), then reverted to the original homepage photo on request.
+- [x] Homepage background: settled on the candlelit buffet photo from the first build (now a CDN asset); the original-site appetizer photo and the uploaded dessert-buffet photo (bg_00a) stay saved as alternatives.

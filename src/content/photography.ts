@@ -1,9 +1,9 @@
-import originalHero from "@/assets/original-site/Background04.jpg.asset.json";
+import heroBuffet from "@/assets/hero-buffet.jpg.asset.json";
 
-// Use the original homepage photograph rather than a generated substitute.
+// Homepage photograph used since the first build of the site.
 export const homepagePhoto = {
-  src: originalHero.url,
-  alt: "An artfully arranged appetizer on a glass plate against a dark background",
-  width: 1700,
-  height: 1100,
+  src: heroBuffet.url,
+  alt: "Candlelit catered buffet with chafing dishes, salads and fruit",
+  width: 1920,
+  height: 1088,
 };
