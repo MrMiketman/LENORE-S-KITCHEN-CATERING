@@ -8,12 +8,12 @@ function getAudio(container: HTMLElement) {
 }
 
 describe("music player volume", () => {
-  it("starts the track at 5% volume", () => {
+  it("starts the track at 10% volume", () => {
     const { container } = render(<AudioPlayer />);
     const audio = getAudio(container);
 
     expect(audio).not.toBeNull();
-    expect(audio!.volume).toBe(0.05);
+    expect(audio!.volume).toBe(0.1);
   });
 
   it("applies a volume the visitor drags the slider to", () => {
