@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-buffet.jpg";
+import { homepagePhoto } from "@/content/photography";
 import gallerySpace from "@/assets/gallery-space.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
@@ -31,7 +31,7 @@ function Home() {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[max(600px,92svh)] flex-col overflow-hidden bg-ink text-ivory md:block md:h-[92svh]">
-        <img src={heroImg} alt="Candlelit catered buffet with chafing dishes, salads and fruit" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover object-[20%_50%]" />
+        <img src={homepagePhoto.src} alt={homepagePhoto.alt} width={homepagePhoto.width} height={homepagePhoto.height} className="absolute inset-0 h-full w-full object-cover object-[20%_50%]" />
         <div className="hero-scrim absolute inset-0" />
         <div className="container-site relative flex flex-1 items-end pb-16 pt-28 md:h-full md:items-center md:justify-end md:pb-0 md:pt-0">
           <Reveal className="max-w-xl">
