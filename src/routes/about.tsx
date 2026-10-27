@@ -59,7 +59,7 @@ function About() {
       </section>
 
       <section className="grid md:grid-cols-3">
-        {[pick(2, 4), pick(3, 4), pick(4, 5)].map((src) => (
+        {[pick(7, 4), pick(10, 4), pick(5, 5)].map((src) => (
           <div key={src} className="aspect-[4/3] overflow-hidden"><img src={src} alt="Lenore’s Kitchen catered food display" loading="lazy" className="h-full w-full object-cover" /></div>
         ))}
       </section>

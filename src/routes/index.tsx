@@ -19,12 +19,12 @@ export const Route = createFileRoute("/")({
 });
 
 const signature = [
-  { src: pick(1, 4), alt: "Tiered fruit and charcuterie display on a draped buffet table", caption: "Buffet displays", cls: "md:col-span-4 aspect-[3/4]" },
-  { src: pick(4, 6), alt: "Assorted desserts and pastries arranged across a catered table", caption: "Sweets & pastries", cls: "md:col-span-5 aspect-[4/3] md:mt-24" },
-  { src: pick(3, 3), alt: "Long catered buffet line set in a bright event hall", caption: "Event service", cls: "md:col-span-3 aspect-[3/4] md:-mt-10" },
+  { src: pick(7, 10), alt: "Tiered fruit and charcuterie display on a draped buffet table", caption: "Buffet displays", cls: "md:col-span-4 aspect-[3/4]" },
+  { src: pick(10, 8), alt: "Assorted desserts and pastries arranged across a catered table", caption: "Sweets & pastries", cls: "md:col-span-5 aspect-[4/3] md:mt-24" },
+  { src: pick(5, 3), alt: "Long catered buffet line set in a bright event hall", caption: "Event service", cls: "md:col-span-3 aspect-[3/4] md:-mt-10" },
 ];
 
-const preview = [pick(2, 7), pick(3, 0), pick(6, 3), pick(10, 0), pick(5, 6), pick(7, 6)];
+const preview = [pick(7, 20), pick(10, 3), pick(6, 3), pick(10, 0), pick(5, 6), pick(7, 6)];
 
 function Home() {
   return (

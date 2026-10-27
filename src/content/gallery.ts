@@ -4,20 +4,142 @@ import daniel0005 from "@/assets/daniel0005.mp4.asset.json";
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
 import lkc2 from "@/assets/lkc2.jpg.asset.json";
 import lkc3 from "@/assets/lkc3.jpg.asset.json";
+import gal000 from "@/assets/gallery/gal-000.jpg.asset.json";
+import gal001 from "@/assets/gallery/gal-001.jpg.asset.json";
+import gal002 from "@/assets/gallery/gal-002.jpg.asset.json";
+import gal003 from "@/assets/gallery/gal-003.jpg.asset.json";
+import gal004 from "@/assets/gallery/gal-004.jpg.asset.json";
+import gal005 from "@/assets/gallery/gal-005.jpg.asset.json";
+import gal006 from "@/assets/gallery/gal-006.jpg.asset.json";
+import gal007 from "@/assets/gallery/gal-007.jpg.asset.json";
+import gal008 from "@/assets/gallery/gal-008.jpg.asset.json";
+import gal009 from "@/assets/gallery/gal-009.jpg.asset.json";
+import gal010 from "@/assets/gallery/gal-010.jpg.asset.json";
+import gal011 from "@/assets/gallery/gal-011.jpg.asset.json";
+import gal012 from "@/assets/gallery/gal-012.jpg.asset.json";
+import gal013 from "@/assets/gallery/gal-013.jpg.asset.json";
+import gal014 from "@/assets/gallery/gal-014.jpg.asset.json";
+import gal015 from "@/assets/gallery/gal-015.jpg.asset.json";
+import gal016 from "@/assets/gallery/gal-016.jpg.asset.json";
+import gal017 from "@/assets/gallery/gal-017.jpg.asset.json";
+import gal018 from "@/assets/gallery/gal-018.jpg.asset.json";
+import gal019 from "@/assets/gallery/gal-019.jpg.asset.json";
+import gal020 from "@/assets/gallery/gal-020.jpg.asset.json";
+import gal021 from "@/assets/gallery/gal-021.jpg.asset.json";
+import gal022 from "@/assets/gallery/gal-022.jpg.asset.json";
+import gal023 from "@/assets/gallery/gal-023.jpg.asset.json";
+import gal024 from "@/assets/gallery/gal-024.jpg.asset.json";
+import gal025 from "@/assets/gallery/gal-025.jpg.asset.json";
+import gal026 from "@/assets/gallery/gal-026.jpg.asset.json";
+import gal027 from "@/assets/gallery/gal-027.jpg.asset.json";
+import gal028 from "@/assets/gallery/gal-028.jpg.asset.json";
+import gal029 from "@/assets/gallery/gal-029.jpg.asset.json";
+import gal030 from "@/assets/gallery/gal-030.jpg.asset.json";
+import gal031 from "@/assets/gallery/gal-031.jpg.asset.json";
+import gal032 from "@/assets/gallery/gal-032.jpg.asset.json";
+import gal033 from "@/assets/gallery/gal-033.jpg.asset.json";
+import gal034 from "@/assets/gallery/gal-034.jpg.asset.json";
+import gal035 from "@/assets/gallery/gal-035.jpg.asset.json";
+import gal036 from "@/assets/gallery/gal-036.jpg.asset.json";
+import gal037 from "@/assets/gallery/gal-037.jpg.asset.json";
+import gal038 from "@/assets/gallery/gal-038.jpg.asset.json";
+import gal039 from "@/assets/gallery/gal-039.jpg.asset.json";
+import gal040 from "@/assets/gallery/gal-040.jpg.asset.json";
+import gal041 from "@/assets/gallery/gal-041.jpg.asset.json";
+import gal042 from "@/assets/gallery/gal-042.jpg.asset.json";
+import gal043 from "@/assets/gallery/gal-043.jpg.asset.json";
+import gal044 from "@/assets/gallery/gal-044.jpg.asset.json";
+import gal045 from "@/assets/gallery/gal-045.jpg.asset.json";
+import gal046 from "@/assets/gallery/gal-046.jpg.asset.json";
+import gal047 from "@/assets/gallery/gal-047.jpg.asset.json";
+import gal048 from "@/assets/gallery/gal-048.jpg.asset.json";
+import gal049 from "@/assets/gallery/gal-049.jpg.asset.json";
+import gal050 from "@/assets/gallery/gal-050.jpg.asset.json";
+import gal051 from "@/assets/gallery/gal-051.jpg.asset.json";
+import gal052 from "@/assets/gallery/gal-052.jpg.asset.json";
+import gal053 from "@/assets/gallery/gal-053.jpg.asset.json";
+import gal054 from "@/assets/gallery/gal-054.jpg.asset.json";
+import gal055 from "@/assets/gallery/gal-055.jpg.asset.json";
+import gal056 from "@/assets/gallery/gal-056.jpg.asset.json";
+import gal057 from "@/assets/gallery/gal-057.jpg.asset.json";
+import gal058 from "@/assets/gallery/gal-058.jpg.asset.json";
+import gal059 from "@/assets/gallery/gal-059.jpg.asset.json";
+import gal060 from "@/assets/gallery/gal-060.jpg.asset.json";
+import gal061 from "@/assets/gallery/gal-061.jpg.asset.json";
+import gal062 from "@/assets/gallery/gal-062.jpg.asset.json";
+import gal063 from "@/assets/gallery/gal-063.jpg.asset.json";
+import gal064 from "@/assets/gallery/gal-064.jpg.asset.json";
+import gal065 from "@/assets/gallery/gal-065.jpg.asset.json";
+import gal066 from "@/assets/gallery/gal-066.jpg.asset.json";
+import gal067 from "@/assets/gallery/gal-067.jpg.asset.json";
+import gal068 from "@/assets/gallery/gal-068.jpg.asset.json";
+import gal069 from "@/assets/gallery/gal-069.jpg.asset.json";
+import gal070 from "@/assets/gallery/gal-070.jpg.asset.json";
+import gal071 from "@/assets/gallery/gal-071.jpg.asset.json";
+import gal072 from "@/assets/gallery/gal-072.jpg.asset.json";
+import gal073 from "@/assets/gallery/gal-073.jpg.asset.json";
+import gal074 from "@/assets/gallery/gal-074.jpg.asset.json";
+import gal075 from "@/assets/gallery/gal-075.jpg.asset.json";
+import gal076 from "@/assets/gallery/gal-076.jpg.asset.json";
+import gal077 from "@/assets/gallery/gal-077.jpg.asset.json";
+import gal078 from "@/assets/gallery/gal-078.jpg.asset.json";
+import gal079 from "@/assets/gallery/gal-079.jpg.asset.json";
+import gal080 from "@/assets/gallery/gal-080.jpg.asset.json";
+import gal081 from "@/assets/gallery/gal-081.jpg.asset.json";
+import gal082 from "@/assets/gallery/gal-082.jpg.asset.json";
+import gal083 from "@/assets/gallery/gal-083.jpg.asset.json";
+import gal084 from "@/assets/gallery/gal-084.jpg.asset.json";
+import gal085 from "@/assets/gallery/gal-085.jpg.asset.json";
+import gal086 from "@/assets/gallery/gal-086.jpg.asset.json";
+import gal087 from "@/assets/gallery/gal-087.jpg.asset.json";
+import gal088 from "@/assets/gallery/gal-088.jpg.asset.json";
+import gal089 from "@/assets/gallery/gal-089.jpg.asset.json";
+import gal090 from "@/assets/gallery/gal-090.jpg.asset.json";
+import gal091 from "@/assets/gallery/gal-091.jpg.asset.json";
+import gal092 from "@/assets/gallery/gal-092.jpg.asset.json";
+import gal093 from "@/assets/gallery/gal-093.jpg.asset.json";
+import gal094 from "@/assets/gallery/gal-094.jpg.asset.json";
+import gal095 from "@/assets/gallery/gal-095.jpg.asset.json";
+import gal096 from "@/assets/gallery/gal-096.jpg.asset.json";
+import gal097 from "@/assets/gallery/gal-097.jpg.asset.json";
+import gal098 from "@/assets/gallery/gal-098.jpg.asset.json";
+import gal099 from "@/assets/gallery/gal-099.jpg.asset.json";
+import gal100 from "@/assets/gallery/gal-100.jpg.asset.json";
+import gal101 from "@/assets/gallery/gal-101.jpg.asset.json";
+import gal102 from "@/assets/gallery/gal-102.jpg.asset.json";
+import gal103 from "@/assets/gallery/gal-103.jpg.asset.json";
+import gal104 from "@/assets/gallery/gal-104.jpg.asset.json";
+import gal105 from "@/assets/gallery/gal-105.jpg.asset.json";
+import gal106 from "@/assets/gallery/gal-106.jpg.asset.json";
+import gal107 from "@/assets/gallery/gal-107.jpg.asset.json";
+import gal108 from "@/assets/gallery/gal-108.jpg.asset.json";
+import gal109 from "@/assets/gallery/gal-109.jpg.asset.json";
+import gal110 from "@/assets/gallery/gal-110.jpg.asset.json";
+import gal111 from "@/assets/gallery/gal-111.jpg.asset.json";
+import gal112 from "@/assets/gallery/gal-112.jpg.asset.json";
+import gal113 from "@/assets/gallery/gal-113.jpg.asset.json";
+import gal114 from "@/assets/gallery/gal-114.jpg.asset.json";
+import gal115 from "@/assets/gallery/gal-115.jpg.asset.json";
+import gal116 from "@/assets/gallery/gal-116.jpg.asset.json";
+import gal117 from "@/assets/gallery/gal-117.jpg.asset.json";
+import gal118 from "@/assets/gallery/gal-118.jpg.asset.json";
+import gal119 from "@/assets/gallery/gal-119.jpg.asset.json";
+import gal120 from "@/assets/gallery/gal-120.jpg.asset.json";
+import gal121 from "@/assets/gallery/gal-121.jpg.asset.json";
+import gal122 from "@/assets/gallery/gal-122.jpg.asset.json";
+import gal123 from "@/assets/gallery/gal-123.jpg.asset.json";
 
-// Photographs sourced from the original lenoreskitchencateringinc.com gallery pages.
-// Gallery 8 and Gallery 9 had no retrievable images at the time of the redesign.
+// Photographs recovered from the Internet Archive's saved copies of the original
+// lenoreskitchencateringinc.com gallery pages after the old site removed them.
+// Galleries 1-4 (uploaded to the old site in 2026) were never archived and are gone;
+// Galleries 8 and 9 had no retrievable images at the time of the redesign.
 export type GalleryCollection = { id: string; title: string; images: string[] };
 
 export const galleryCollections: GalleryCollection[] = [
-  { id: "gallery-1", title: "Gallery 1", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC-04_0000_Layer-24.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC-04_0000_Layer-25.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0000_Layer-23.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0001_Layer-22.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0002_Layer-21.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0003_Layer-20.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0004_Layer-19.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0005_Layer-18.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0006_Layer-17.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0008_Layer-15.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0009_Layer-14.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0010_Layer-13.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0011_Layer-12.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0012_Layer-11.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0013_Layer-10.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0014_Layer-9.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0015_Layer-8.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0016_Layer-7.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0017_Layer-6.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0018_Layer-5.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0019_Layer-4.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0020_Layer-3.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC_0021_Layer-2.jpg"] },
-  { id: "gallery-2", title: "Gallery 2", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/004.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/005.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0017_Layer-60.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0018_Layer-59.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0019_Layer-58.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0020_Layer-57.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0021_Layer-56.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0022_Layer-55.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0023_Layer-54.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0024_Layer-53.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0025_Layer-52.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0027_Layer-50.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0028_Layer-49.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0029_Layer-48.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0030_Layer-47.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0031_Layer-46.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0032_Layer-45.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0033_Layer-44.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0034_Layer-43.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0035_Layer-42.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0036_Layer-41.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0038_Layer-39.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0039_Layer-38.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0040_Layer-35.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0042_Layer-36.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0043_Layer-34.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0044_Layer-33.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0045_Layer-32.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0046_Layer-31.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0047_Layer-30.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0048_Layer-29.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0049_Layer-28.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0050_Layer-27.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0052_Layer-25.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0053_Layer-24.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0054_Layer-23.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0056_Layer-21.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0057_Layer-20.jpg"] },
-  { id: "gallery-3", title: "Gallery 3", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0008_Layer-69.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0009_Layer-68.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0010_Layer-67.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0011_Layer-66.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0012_Layer-65.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0013_Layer-64.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0014_Layer-63.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0015_Layer-62.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0016_Layer-61.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0058_Layer-19.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0059_Layer-18.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0060_Layer-17.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0061_Layer-16.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0062_Layer-15.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0063_Layer-14.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0064_Layer-13.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0065_Layer-12.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0066_Layer-11.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0067_Layer-10.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0068_Layer-9.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0069_Layer-8.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0070_Layer-7.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0071_Layer-6.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0072_Layer-5.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0073_Layer-4.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0074_Layer-3.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0075_Layer-2.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0076_Layer-1.jpg"] },
-  { id: "gallery-4", title: "Gallery 4", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20240420_164211.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20240530_172748.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20240618_124804.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20240915_142109.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20240915_142352.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250426_160508.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250426_160555.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250510_115228.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250510_115720.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250628_141323.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250719_165712.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250720_131239.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250807_132931.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250823_160502.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/LKC2_0065_Layer-12.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/lkc-008.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/lkc-009.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/lkc-010.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/lkc-011.jpg"] },
-  { id: "gallery-5", title: "Gallery 5", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_001.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_002.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_006.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_012.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_016.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_022.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_030.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_031.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_033.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_036.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_037.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_039.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_078.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_079.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_081.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_083.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_089.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Lenkth-_090.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY1007.jpg"] },
-  { id: "gallery-6", title: "Gallery 6", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141022_171525.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141101_095426.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141101_095836.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150606_125405.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150606_133103.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150627_174211.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150627_180921.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150822_132635.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150822_135424.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20150822_142315.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20151205_174638.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20151205_175153.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20151205_175244.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20151205_175252.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20151205_175353.jpg"] },
-  { id: "gallery-7", title: "Gallery 7", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/1075342_777255412287101_8558020525266068753_o.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/1075462_777255525620423_4496258972810657486_o.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/1277067_670437056302271_220847500_o.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141206_174242.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141206_174740.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141208_095928.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_145810.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_150216.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_150443.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_150547.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_150821.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/20141214_151240.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/580232_2070398136921_1750235563_n.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/75020_670436876302289_1628050260_n.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/995191_670436939635616_274966022_n.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-054.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-057.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-059.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-060.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-067.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-069.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-070.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-071.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-073.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-076.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-084.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-086.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-148.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-149.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-150.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-152.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-162.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-163.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-165.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-183.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-190.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-194.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-240.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-241.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-243.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-244.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-249.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-251.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-253.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-256.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-262.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-263.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-265.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-557.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-558.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-571.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-606.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-609.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-610.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-613.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-617.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-623.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/Eventful-Pictures-625.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY0912.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY1005.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY1017.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY1105.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/04/SANY1118.jpg"] },
-  { id: "gallery-10", title: "Gallery 10", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_180936.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_182944.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_192953.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_193001.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_193008.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_194139.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180414_152118.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180414_154708.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190722.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190728.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190800.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180427_150729.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_120846.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_170117.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_175257.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_175300.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180504_142417.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180512_123915.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_165100.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_165108.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_173010.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_174256.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_070145.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_121654.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_121815.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/FB_IMG_1518525157042.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/FB_IMG_1518525365208.jpg"] },
+  { id: "gallery-5", title: "Gallery 5", images: [gal073.url, gal074.url, gal075.url, gal076.url, gal077.url, gal078.url, gal079.url, gal080.url, gal081.url, gal082.url, gal083.url, gal084.url, gal085.url, gal086.url, gal087.url, gal088.url, gal089.url, gal090.url, gal093.url] },
+  { id: "gallery-6", title: "Gallery 6", images: [gal003.url, gal004.url, gal005.url, gal015.url, gal016.url, gal017.url, gal018.url, gal019.url, gal020.url, gal021.url, gal022.url, gal023.url, gal024.url, gal025.url, gal026.url] },
+  { id: "gallery-7", title: "Gallery 7", images: [gal000.url, gal001.url, gal002.url, gal006.url, gal007.url, gal008.url, gal009.url, gal010.url, gal011.url, gal012.url, gal013.url, gal014.url, gal027.url, gal028.url, gal029.url, gal030.url, gal031.url, gal032.url, gal033.url, gal034.url, gal035.url, gal036.url, gal037.url, gal038.url, gal039.url, gal040.url, gal041.url, gal042.url, gal043.url, gal044.url, gal045.url, gal046.url, gal047.url, gal048.url, gal049.url, gal050.url, gal051.url, gal052.url, gal053.url, gal054.url, gal055.url, gal056.url, gal057.url, gal058.url, gal059.url, gal060.url, gal061.url, gal062.url, gal063.url, gal064.url, gal065.url, gal066.url, gal067.url, gal068.url, gal069.url, gal070.url, gal071.url, gal072.url, gal091.url, gal092.url, gal094.url, gal095.url, gal096.url] },
+  { id: "gallery-10", title: "Gallery 10", images: [gal097.url, gal098.url, gal099.url, gal100.url, gal101.url, gal102.url, gal103.url, gal104.url, gal105.url, gal106.url, gal107.url, gal108.url, gal109.url, gal110.url, gal111.url, gal112.url, gal113.url, gal114.url, gal115.url, gal116.url, gal117.url, gal118.url, gal119.url, gal120.url, gal121.url, gal122.url, gal123.url] },
 ];
 
 // Media page: three video player slots. Each slot shows an owner-supplied
@@ -55,8 +177,9 @@ export const mediaItems: MediaItem[] = [
 ];
 
 export function pick(galleryNumber: number, index: number) {
-  const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`);
-  return c?.images[index] ?? galleryCollections[0]?.images[0] ?? "";
+  const c = galleryCollections.find((g) => g.id === `gallery-${galleryNumber}`) ?? galleryCollections[0];
+  if (!c || c.images.length === 0) return "";
+  return c.images[index % c.images.length];
 }
 
 export const allPhotos = galleryCollections.flatMap((c) =>
