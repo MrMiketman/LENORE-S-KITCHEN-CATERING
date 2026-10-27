@@ -103,7 +103,7 @@ function Catering() {
             </p>
           </div>
           <div className="md:col-span-7 md:col-start-6">
-            <InquiryForm fields={cateringFields} submitLabel="Request Catering Information" />
+            <InquiryForm form="Catering" fields={cateringFields} submitLabel="Request Catering Information" />
           </div>
         </div>
       </section>

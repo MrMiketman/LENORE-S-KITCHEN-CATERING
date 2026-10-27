@@ -46,7 +46,7 @@ function Contact() {
             <PricingNotice />
           </aside>
           <div className="md:col-span-7 md:col-start-6">
-            <InquiryForm fields={contactFields} submitLabel="Send Message" />
+            <InquiryForm form="Contact" fields={contactFields} submitLabel="Send Message" />
           </div>
         </div>
       </section>
