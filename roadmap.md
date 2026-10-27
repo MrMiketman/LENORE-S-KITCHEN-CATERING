@@ -1,5 +1,7 @@
 # Roadmap
 
+- [ ] Download original photos from bisque-curlew-779356.hostingersite.com and reconnect all matching galleries and page images.
+
 - [x] Make the site favicon from the logo (icon set built, head links wired)
 - [x] Media page: show a link for each video where playback isn't supported
 - [x] Media page: swap the first video for the uploaded event photo (Photo 01)
