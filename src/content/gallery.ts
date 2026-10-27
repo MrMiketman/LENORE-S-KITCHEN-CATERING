@@ -17,38 +17,38 @@ export const galleryCollections: GalleryCollection[] = [
   { id: "gallery-10", title: "Gallery 10", images: ["https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_180936.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_182944.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_192953.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_193001.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_193008.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180407_194139.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180414_152118.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180414_154708.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190722.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190728.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180426_190800.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180427_150729.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_120846.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_170117.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_175257.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180429_175300.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180504_142417.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180512_123915.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_165100.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_165108.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_173010.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180514_174256.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_070145.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_121654.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/20180519_121815.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/FB_IMG_1518525157042.jpg", "https://lenoreskitchencateringinc.com/wp-content/uploads/2018/05/FB_IMG_1518525365208.jpg"] },
 ];
 
-export const videoGallery = [
-  "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/MPG001.mp4",
-  "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250628_140714.mp4",
-  "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20251008_105651.mp4",
-];
-
-export type MediaItem =
-  | { kind: "photo"; src: string; alt: string; label: string }
-  | { kind: "video"; src: string; label: string };
+// Media page: three video player slots. Each slot shows an owner-supplied
+// photo as its cover; `src` is set once the matching video file is uploaded.
+export type MediaItem = {
+  kind: "video";
+  src: string | null;
+  poster: string;
+  alt: string;
+  label: string;
+};
 
 export const mediaItems: MediaItem[] = [
   {
-    kind: "photo",
-    src: lkc1.url,
+    kind: "video",
+    src: null,
+    poster: lkc1.url,
     alt: "A silver bowl of shredded cabbage, carrot and leafy salad on an ornate tentacled silver stand, set on a black tablecloth draped with red satin and scattered with rose petals and crystal gems.",
-    label: "Photo 01",
+    label: "Video 01",
   },
   {
-    kind: "photo",
-    src: lkc2.url,
+    kind: "video",
+    src: null,
+    poster: lkc2.url,
     alt: "Chopped zucchini, yellow squash, red bell pepper and eggplant being tossed with a spatula as they cook.",
-    label: "Photo 02",
+    label: "Video 02",
   },
   {
-    kind: "photo",
-    src: lkc3.url,
+    kind: "video",
+    src: null,
+    poster: lkc3.url,
     alt: "A two-tier buffet display: a mirrored platter of cantaloupe, pineapple, strawberries and grapes above silver trays of carrots, celery, cherry tomatoes and broccoli, set against pink draped curtains.",
-    label: "Photo 03",
+    label: "Video 03",
   },
-  ...videoGallery.slice(2).map(
-    (src, i): MediaItem => ({ kind: "video", src, label: `Video ${String(i + 1).padStart(2, "0")}` }),
-  ),
 ];
 
 export function pick(galleryNumber: number, index: number) {
