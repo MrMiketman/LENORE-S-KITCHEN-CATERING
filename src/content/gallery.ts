@@ -1,4 +1,5 @@
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
+import lkc2 from "@/assets/lkc2.jpg.asset.json";
 
 // Photographs sourced from the original lenoreskitchencateringinc.com gallery pages.
 // Gallery 8 and Gallery 9 had no retrievable images at the time of the redesign.
@@ -32,7 +33,13 @@ export const mediaItems: MediaItem[] = [
     alt: "A silver bowl of shredded cabbage, carrot and leafy salad on an ornate tentacled silver stand, set on a black tablecloth draped with red satin and scattered with rose petals and crystal gems.",
     label: "Photo 01",
   },
-  ...videoGallery.map(
+  {
+    kind: "photo",
+    src: lkc2.url,
+    alt: "Chopped zucchini, yellow squash, red bell pepper and eggplant being tossed with a spatula as they cook.",
+    label: "Photo 02",
+  },
+  ...videoGallery.slice(1).map(
     (src, i): MediaItem => ({ kind: "video", src, label: `Video ${String(i + 1).padStart(2, "0")}` }),
   ),
 ];
