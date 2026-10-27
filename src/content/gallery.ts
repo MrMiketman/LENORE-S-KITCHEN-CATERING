@@ -1,5 +1,6 @@
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
 import lkc2 from "@/assets/lkc2.jpg.asset.json";
+import lkc3 from "@/assets/lkc3.jpg.asset.json";
 
 // Photographs sourced from the original lenoreskitchencateringinc.com gallery pages.
 // Gallery 8 and Gallery 9 had no retrievable images at the time of the redesign.
@@ -39,7 +40,13 @@ export const mediaItems: MediaItem[] = [
     alt: "Chopped zucchini, yellow squash, red bell pepper and eggplant being tossed with a spatula as they cook.",
     label: "Photo 02",
   },
-  ...videoGallery.slice(1).map(
+  {
+    kind: "photo",
+    src: lkc3.url,
+    alt: "A two-tier buffet display: a mirrored platter of cantaloupe, pineapple, strawberries and grapes above silver trays of carrots, celery, cherry tomatoes and broccoli, set against pink draped curtains.",
+    label: "Photo 03",
+  },
+  ...videoGallery.slice(2).map(
     (src, i): MediaItem => ({ kind: "video", src, label: `Video ${String(i + 1).padStart(2, "0")}` }),
   ),
 ];
