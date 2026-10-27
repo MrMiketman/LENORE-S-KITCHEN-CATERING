@@ -112,10 +112,6 @@
   background: linear-gradient(90deg, color-mix(in oklab, var(--overlay) 15%, transparent) 0%, color-mix(in oklab, var(--overlay) 55%, transparent) 55%, color-mix(in oklab, var(--overlay) 80%, transparent) 100%);
 }
 
-@utility hero-scrim-mobile {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--overlay) 20%, transparent) 0%, color-mix(in oklab, var(--overlay) 62%, transparent) 45%, color-mix(in oklab, var(--overlay) 92%, transparent) 100%);
-}
-
 @utility img-zoom {
   transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
   .group:hover & { transform: scale(1.04); }
