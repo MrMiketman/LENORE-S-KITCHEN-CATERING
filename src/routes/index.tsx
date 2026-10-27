@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { homepagePhoto } from "@/content/photography";
-import gallerySpace from "@/assets/gallery-space.jpg";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
 import { ArrowLink, CateringCta, SectionLabel } from "@/components/site/blocks";
@@ -141,25 +140,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Gallery LKC */}
-      <section className="relative overflow-hidden">
-        <img src={gallerySpace} alt="Representative image of an upscale art gallery event space" loading="lazy" width={1600} height={1072} className="h-[70vh] min-h-[480px] w-full object-cover" />
-        <div className="absolute inset-0 bg-overlay/45" />
-        <div className="container-site absolute inset-0 flex items-center">
-          <Reveal className="max-w-lg bg-ivory p-8 md:p-12">
-            <p className="eyebrow text-gold">Opened 2022</p>
-            <h2 className="mt-5 text-4xl md:text-5xl">Discover Gallery LKC.</h2>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
-              An upscale art gallery and event space reflecting a broader vision of creativity, gathering, and community on Chicago’s South Side.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="editorial" size="xl"><a href={business.galleryLkcUrl} target="_blank" rel="noreferrer">Explore Gallery LKC</a></Button>
-              <Button asChild variant="editorial-outline" size="xl"><Link to="/gallery-lkc">Learn More</Link></Button>
-            </div>
-            <p className="mt-6 text-xs text-muted-foreground">Image is representative, not a photograph of Gallery LKC.</p>
-          </Reveal>
-        </div>
-      </section>
 
       {/* Media preview */}
       <section className="py-24 md:py-32">
