@@ -15,6 +15,9 @@ export function AudioPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // Kept very low by request: 5% of full volume.
+    audio.volume = 0.05;
+
     const attempt = () => {
       const p = audio.play();
       if (p) p.then(() => setPlaying(true)).catch(() => {});
