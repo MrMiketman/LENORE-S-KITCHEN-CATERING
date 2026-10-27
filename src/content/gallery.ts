@@ -1,6 +1,6 @@
 import daniel001 from "@/assets/daniel001.mp4.asset.json";
 import daniel02 from "@/assets/daniel02.mp4.asset.json";
-import daniel03 from "@/assets/daniel03.mp4.asset.json";
+import daniel0005 from "@/assets/daniel0005.mp4.asset.json";
 import lkc1 from "@/assets/lkc1.jpg.asset.json";
 import lkc2 from "@/assets/lkc2.jpg.asset.json";
 import lkc3 from "@/assets/lkc3.jpg.asset.json";
@@ -47,7 +47,7 @@ export const mediaItems: MediaItem[] = [
   },
   {
     kind: "video",
-    src: daniel03.url,
+    src: daniel0005.url,
     poster: lkc3.url,
     alt: "A two-tier buffet display: a mirrored platter of cantaloupe, pineapple, strawberries and grapes above silver trays of carrots, celery, cherry tomatoes and broccoli, set against pink draped curtains.",
     label: "Video 03",
