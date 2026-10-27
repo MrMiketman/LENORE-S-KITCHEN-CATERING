@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Music player volume set to 5% (0.05) on every page; verified in the browser on Home, Catering and Media, and covered by src/test/audio-player-volume.test.tsx.
+
 - [x] Small mp3 player (fixed bottom-right corner of every page): plays the uploaded "06_I_Want_You.mp3" on repeat; tries autoplay immediately and starts on the visitor's first click/tap/keypress when the browser blocks it; play/pause button; music keeps playing across page navigation.
 
 
