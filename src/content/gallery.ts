@@ -1,3 +1,5 @@
+import lkc1 from "@/assets/lkc1.jpg.asset.json";
+
 // Photographs sourced from the original lenoreskitchencateringinc.com gallery pages.
 // Gallery 8 and Gallery 9 had no retrievable images at the time of the redesign.
 export type GalleryCollection = { id: string; title: string; images: string[] };
@@ -17,6 +19,22 @@ export const videoGallery = [
   "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/MPG001.mp4",
   "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20250628_140714.mp4",
   "https://lenoreskitchencateringinc.com/wp-content/uploads/2026/01/20251008_105651.mp4",
+];
+
+export type MediaItem =
+  | { kind: "photo"; src: string; alt: string; label: string }
+  | { kind: "video"; src: string; label: string };
+
+export const mediaItems: MediaItem[] = [
+  {
+    kind: "photo",
+    src: lkc1.url,
+    alt: "A silver bowl of shredded cabbage, carrot and leafy salad on an ornate tentacled silver stand, set on a black tablecloth draped with red satin and scattered with rose petals and crystal gems.",
+    label: "Photo 01",
+  },
+  ...videoGallery.map(
+    (src, i): MediaItem => ({ kind: "video", src, label: `Video ${String(i + 1).padStart(2, "0")}` }),
+  ),
 ];
 
 export function pick(galleryNumber: number, index: number) {
