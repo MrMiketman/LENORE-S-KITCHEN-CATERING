@@ -4,6 +4,8 @@ import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { business } from "@/content/site";
 import { cn } from "@/lib/utils";
+import { useServerFn } from "@tanstack/react-start";
+import { submitInquiry } from "@/lib/inquiries.functions";
 
 export type FieldDef = {
   name: string;
@@ -34,15 +36,16 @@ const inputCls =
   "w-full rounded-none border-0 border-b border-input bg-transparent px-0 py-3 text-base text-ink placeholder:text-muted-foreground focus:border-ink focus:outline-none focus-visible:outline-none aria-[invalid=true]:border-destructive";
 
 /**
- * Validated inquiry form. No delivery service is connected yet, so a valid
- * submission shows an honest "not sent" notice with the phone number.
+ * Validated inquiry form. Submissions are saved and emailed to the business.
  */
-export function InquiryForm({ fields, submitLabel }: { fields: FieldDef[]; submitLabel: string }) {
+export function InquiryForm({ fields, submitLabel, form }: { fields: FieldDef[]; submitLabel: string; form: "Contact" | "Catering" }) {
+  const send = useServerFn(submitInquiry);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [status, setStatus] = useState<"idle" | "checking" | "not-connected">("idle");
+  const [status, setStatus] = useState<"idle" | "checking" | "sent" | "failed">("idle");
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const formEl = e.currentTarget;
     const values = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
     const errs = validateFields(fields, values);
     setErrors(errs);
@@ -53,7 +56,16 @@ export function InquiryForm({ fields, submitLabel }: { fields: FieldDef[]; submi
       return;
     }
     setStatus("checking");
-    setTimeout(() => setStatus("not-connected"), 500);
+    try {
+      const rows = fields.map((f) => ({ label: f.label, value: (values[f.name] ?? "").trim() }));
+      const res = await send({ data: { form, rows } });
+      if (res.ok) {
+        setStatus("sent");
+        formEl.reset();
+      } else setStatus("failed");
+    } catch {
+      setStatus("failed");
+    }
   }
 
   return (
@@ -98,14 +110,18 @@ export function InquiryForm({ fields, submitLabel }: { fields: FieldDef[]; submi
         </Button>
       </div>
       <div aria-live="polite" className="md:col-span-2">
-        {status === "not-connected" && (
+        {status === "sent" && (
+          <div role="status" className="border-l-2 border-gold bg-paper px-6 py-5 text-sm leading-relaxed">
+            <p className="font-medium">Thank you — your inquiry was received.</p>
+            <p className="mt-1">We’ll be in touch soon. For anything urgent, call{" "}
+              <a href={business.phoneHref} className="font-medium underline underline-offset-4">{business.phoneDisplay}</a>.</p>
+          </div>
+        )}
+        {status === "failed" && (
           <div role="alert" className="border-l-2 border-destructive bg-paper px-6 py-5 text-sm leading-relaxed">
             <p className="font-medium">Your message was not sent.</p>
-            <p className="mt-1">
-              Online inquiries aren’t connected yet. Your details look complete — please call us at{" "}
-              <a href={business.phoneHref} className="font-medium underline underline-offset-4">{business.phoneDisplay}</a>{" "}
-              to discuss your event.
-            </p>
+            <p className="mt-1">Something went wrong. Please try again or call us at{" "}
+              <a href={business.phoneHref} className="font-medium underline underline-offset-4">{business.phoneDisplay}</a>.</p>
           </div>
         )}
       </div>
