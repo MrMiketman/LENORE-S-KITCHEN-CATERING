@@ -19,7 +19,7 @@ export const Route = createFileRoute("/gallery-lkc")({
 function GalleryLkc() {
   return (
     <>
-      <section className="bg-ink pb-20 pt-36 text-ivory md:pb-28 md:pt-48">
+      <section className="bg-ink pb-20 pt-24 text-ivory md:pb-28 md:pt-36">
         <div className="container-site grid gap-12 md:grid-cols-12">
           <Reveal className="md:col-span-7">
             <p className="eyebrow text-gold">Gallery LKC · Est. 2022</p>
