@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export function PageHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
-    <section className="border-b border-border pb-16 pt-36 md:pb-24 md:pt-44">
+    <section className="border-b border-border pb-16 pt-24 md:pb-24 md:pt-32">
       <div className="container-site">
         <Reveal>
           <p className="eyebrow text-gold">{eyebrow}</p>

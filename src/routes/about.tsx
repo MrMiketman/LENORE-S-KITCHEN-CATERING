@@ -23,7 +23,7 @@ function About() {
       <section className="py-20 md:py-28">
         <div className="container-site grid gap-12 md:grid-cols-12">
           <Reveal className="md:col-span-5">
-            <div className="sticky top-28">
+            <div className="sticky top-8">
               <div className="aspect-[4/5] overflow-hidden bg-muted">
                 <img src={business.founderPhoto} alt="Lillia Key, founder of Lenore’s Kitchen Catering" className="h-full w-full object-cover object-top" />
               </div>
